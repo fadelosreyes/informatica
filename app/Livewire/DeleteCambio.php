@@ -9,7 +9,7 @@ use Livewire\Component;
 class DeleteCambio extends Component
 {
     public $ordenador;
-    public $dispositivo; 
+    public $dispositivo;
 
     public function mount($ordenadorId)
     {
@@ -20,6 +20,8 @@ class DeleteCambio extends Component
     {
         $cambio = Cambio::findOrFail($cambioId);
         $cambio->delete();
+
+        //$this->ordenador->load('cambios')
     }
 
     public function render()

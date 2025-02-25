@@ -19,7 +19,7 @@ class OrdenadorController extends Controller
             'ordenadores' => Ordenador::orderBy('created_at', 'desc')->paginate(2)
         ]);
     }
-
+ 
     /**
      * Show the form for creating a new resource.
      */

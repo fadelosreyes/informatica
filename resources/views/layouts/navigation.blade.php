@@ -21,6 +21,11 @@
                         {{ __('Ordenadores') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('aulas-index')" :active="request()->routeIs('aulas-index')">
+                        {{ __('aulas') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
